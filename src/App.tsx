@@ -9,13 +9,11 @@ function App() {
 
   return (
     <>
-      <body>
-        <header className='flex justify-between gap-3 md:gap-5'>
-          <Header />
-          <SearchBar />
-          <ToggleButton />
-        </header>
-      </body>
+      <header className='flex justify-between gap-3 md:gap-5'>
+        <Header />
+        <SearchBar />
+        <ToggleButton />
+      </header>
     </>
   )
 }
