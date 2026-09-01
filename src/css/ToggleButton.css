@@ -1,0 +1,76 @@
+.app {
+    background: #f7f9fc;
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* °C / °F container */
+.temp-toggle {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 44px;
+    padding: 4px;
+    border-radius: 24px;
+    background: #f1f4f8;
+}
+
+/* °C and °F buttons */
+.temp-toggle button {
+    flex: 1;
+    height: 36px;
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    color: #111;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Selected option */
+.temp-toggle button.active {
+    background: white;
+    color: #2563eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Moon button */
+.theme-button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #dce3ec;
+    border-radius: 50%;
+    background: white;
+    color: #111;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Dark mode */
+.app.dark {
+    background: #111827;
+}
+
+.app.dark .temp-toggle {
+    background: #1f2937;
+}
+
+.app.dark .temp-toggle button {
+    color: white;
+}
+
+.app.dark .temp-toggle button.active {
+    background: #374151;
+    color: #60a5fa;
+}
+
+.app.dark .theme-button {
+    background: #1f2937;
+    border-color: #374151;
+    color: white;
+}
