@@ -29,7 +29,7 @@ const SearchBar = () => {
             </div>
             <button
                 type="submit"
-                className="ml-2 bg-linear-to-br from-blue-500 to-sky-400 text-white rounded-xl p-2 m-2 whitespace-nowrap"
+                className="ml-2 bg-linear-to-br from-blue-500 to-sky-400 text-white rounded-xl py-1 px-4 m-2 mr-4 whitespace-nowrap"
             >
                 Search
             </button>
