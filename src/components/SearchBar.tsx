@@ -13,7 +13,7 @@ const SearchBar = () => {
     return (
         <form
             onSubmit={handleSearchSubmit}
-            className="flex justify-between items-center gap-5 border rounded-lg border-gray-500 w-[50%]"
+            className="flex justify-between items-center gap-5 border rounded-lg border-gray-500 w-full"
         >
             <div className="ml-5">
                 <Search size={25} />

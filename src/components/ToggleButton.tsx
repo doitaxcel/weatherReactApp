@@ -6,8 +6,7 @@ const ToggleButton = () => {
 
 
     return (
-        <div className="controls">
-
+        <div className="controls mt-4">
             <div className="temp-toggle">
                 <button
                     className={unit === "C" ? "active" : ""}

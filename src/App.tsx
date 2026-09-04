@@ -14,10 +14,12 @@ function App() {
   return (
     <>
       <div className='max-w-5xl mx-auto'>
-        <header className='flex justify-between m-6 gap-3 md:gap-5'>
+        <header className='flex flex-col md:flex-row justify-between m-6 gap-3'>
           <Header />
-          <SearchBar />
-          <ToggleButton />
+          <div className='flex justify-center md:justify-between items-center gap-3 w-full'>
+            <SearchBar />
+            <ToggleButton />
+          </div>
         </header>
         <main>
           <section>
