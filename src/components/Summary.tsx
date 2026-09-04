@@ -2,7 +2,7 @@ import { Clock, Star, CloudSun } from 'lucide-react'
 
 const Summary = () => {
     return (
-        <section className='flex flex-col justify-center rounded-2xl m-6 p-10 bg-linear-to-br from-blue-500 to-sky-400 text-white shadow-md'>
+        <section className='flex flex-col justify-center rounded-2xl m-6 p-7 bg-linear-to-br from-blue-500 to-sky-400 text-white shadow-md'>
             <header className='flex justify-between items-center gap-5'>
                 <div>
                     <h2 className='text-3xl font-bold'>Manila, Philippines</h2>
@@ -35,9 +35,9 @@ const Summary = () => {
                     <span>L : 26°</span>
                 </div>
 
-                <div className='flex'>
+                <div className='flex justify-center'>
                     <Clock aria-hidden='true' />
-                    <span>Updated: 10:25 AM</span>
+                    <span className='ml-2'>Updated: 10:25 AM</span>
                 </div>
             </footer>
         </section>
