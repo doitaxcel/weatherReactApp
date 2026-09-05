@@ -86,27 +86,27 @@ npm run dev
 Open the local URL provided by Vite in your browser.
 
 
-How It Works
+# How It Works
 The application starts with Manila as the default location.
 
 When a user searches for a city, the Open-Meteo Geocoding API is used to find the city's coordinates. Those coordinates are then used with the Open-Meteo Forecast API to retrieve the weather data.
 
-The application displays:
+# The application displays:
 
-Current weather
-Feels-like temperature
-Today's high and low
-Humidity
-Wind speed
-Atmospheric pressure
-Visibility
-UV index
-Chance of rain
-Hourly forecast
-7-day forecast
+- Current weather
+- Feels-like temperature
+- Today's high and low
+- Humidity
+- Wind speed
+- Atmospheric pressure
+- Visibility
+- UV index
+- Chance of rain
+- Hourly forecast
+- 7-day forecast
 The temperature toggle allows users to switch between Celsius and Fahrenheit.
 
-Project Structure Overview
+# Project Structure Overview
 Components
 The components directory contains the reusable UI components used throughout the application.
 
@@ -116,24 +116,22 @@ The services directory contains functions responsible for communicating with ext
 Types
 The types directory contains TypeScript interfaces used to describe the weather API data.
 
-Utils
+# Utils
 The utils directory contains reusable helper functions, such as weather-code descriptions, weather icons, temperature conversion, and date/time formatting.
 
-API Documentation
-Open-Meteo:
-
+# API Documentation
+## Open-Meteo:
 https://open-meteo.com/
 
 Open-Meteo provides free weather APIs without requiring an API key.
 
-Future Improvements
+# Future Improvements
 Possible improvements for the project include:
-
-Weather forecast for more than 7 days
-Multiple search results
-Favorite cities
-Dark mode
-Better loading animations
+- Weather forecast for more than 7 days
+- Multiple search results
+- Favorite cities
+- Dark mode
+- Better loading animations
 More detailed weather information
 Improved mobile experience
 Geolocation support
