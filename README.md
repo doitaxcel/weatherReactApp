@@ -65,7 +65,7 @@ src/
 │
 ├── App.tsx
 └── main.tsx
-```md
+```
 
 Getting Started
 Prerequisites
