@@ -64,7 +64,7 @@ src/
 │   └── weather.ts
 │
 ├── App.tsx
-└── main.tsx
+└── main.tsx```
 
 Getting Started
 Prerequisites
@@ -84,21 +84,6 @@ npm run dev
 
 Open the local URL provided by Vite in your browser.
 
-Build for Production
-Create a production build:
-
-npm run build
-
-Preview the production build locally:
-
-npm run preview
-
-Screenshots
-Add screenshots of the application here once the project is deployed.
-
-Example:
-
-![Weather App Screenshot](./screenshots/weather-app.png)
 
 How It Works
 The application starts with Manila as the default location.
