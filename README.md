@@ -64,7 +64,8 @@ src/
 │   └── weather.ts
 │
 ├── App.tsx
-└── main.tsx```
+└── main.tsx
+```md
 
 Getting Started
 Prerequisites
