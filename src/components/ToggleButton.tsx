@@ -1,12 +1,13 @@
-import { useState } from 'react'
 import "../css/ToggleButton.css"
 
-const ToggleButton = () => {
-    const [unit, setUnit] = useState("C");
+interface Props {
+    unit: "C" | "F";
+    setUnit: React.Dispatch<React.SetStateAction<"C" | "F">>;
+}
 
-
+const ToggleButton = ({ unit, setUnit }: Props) => {
     return (
-        <div className="controls mt-4">
+        <div className="controls">
             <div className="temp-toggle">
                 <button
                     className={unit === "C" ? "active" : ""}
@@ -26,4 +27,4 @@ const ToggleButton = () => {
     );
 }
 
-export default ToggleButton
+export default ToggleButton;

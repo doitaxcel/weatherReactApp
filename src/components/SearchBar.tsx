@@ -1,38 +1,52 @@
-import { useState } from 'react';
-import { Search } from 'lucide-react';
+import { Search } from "lucide-react";
 
-const SearchBar = () => {
-    const [search, setSearch] = useState('');
+interface Props {
+    onSearch: (city: string) => void;
+    error: string | null;
+}
 
-    const handleSearchSubmit = (e) => {
-        e.preventDefault();
-        console.log("gumana ka");
-        console.log('Searching for:', search);
-    };
-
+const SearchBar = ({ onSearch, error }: Props) => {
     return (
         <form
-            onSubmit={handleSearchSubmit}
-            className="flex justify-between items-center gap-5 border rounded-lg border-gray-500 w-full"
+            onSubmit={(e) => {
+                e.preventDefault();
+
+                const form = e.currentTarget;
+                const input = form.elements.namedItem("city") as HTMLInputElement;
+
+                if (!input.value.trim()) return;
+
+                onSearch(input.value.trim());
+                input.value = "";
+            }}
+            className="flex items-center w-full max-w-md"
         >
-            <div className="ml-5">
-                <Search size={25} />
-            </div>
-            <div className="w-full">
-                <input
-                    type="text"
-                    placeholder="Search City..."
-                    className="border-0 border-gray-400 rounded-lg p-1 focus:outline-none w-full"
-                    onChange={(e) => setSearch(e.target.value)}
-                    value={search}
+            <div className="flex relative items-center w-full bg-white rounded-2xl border border-gray-200 shadow-sm px-4 py-2 transition-all duration-200 focus-within:border-blue-400 focus-within:ring-4 focus-within:ring-blue-100">
+
+                <Search
+                    size={20}
+                    className="text-gray-400 mr-2 shrink-0"
                 />
+
+                <input
+                    name="city"
+                    type="text"
+                    placeholder="Search city..."
+                    className="w-full bg-transparent outline-none text-gray-700 placeholder:text-gray-400"
+                />
+                {error && (
+                    <p className="absolute top-full mt-1 text-sm text-red-500">
+                        {error}
+                    </p>
+                )}
+
+                <button
+                    type="submit"
+                    className="ml-2 rounded-2xl bg-blue-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-600"
+                >
+                    Search
+                </button>
             </div>
-            <button
-                type="submit"
-                className="ml-2 bg-linear-to-br from-blue-500 to-sky-400 text-white rounded-xl py-1 px-4 m-2 mr-4 whitespace-nowrap"
-            >
-                Search
-            </button>
         </form>
     );
 };
