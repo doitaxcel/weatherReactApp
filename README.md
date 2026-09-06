@@ -120,7 +120,7 @@ The types directory contains TypeScript interfaces used to describe the weather 
 The utils directory contains reusable helper functions, such as weather-code descriptions, weather icons, temperature conversion, and date/time formatting.
 
 # API Documentation
-## Open-Meteo:
+Open-Meteo:
 https://open-meteo.com/
 
 Open-Meteo provides free weather APIs without requiring an API key.
