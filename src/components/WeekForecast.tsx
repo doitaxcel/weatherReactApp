@@ -23,7 +23,7 @@ const WeekForecast = ({ daily, unit }: Props) => {
                         return (
                             <div key={date} className="border-b border-gray-500/60 last:border-b-0">
                                 <div className="flex px-6 py-1 items-center w-full">
-                                    <h3 className=" mr-[5%] text-base ">{formatDay(date, index)}</h3>
+                                    <h3 className="w-28 shrink-0 text-base">{formatDay(date, index)}</h3>
 
                                     <div className="flex items-center  gap-6 flex-1">
                                         <Icon size={45} className="text-blue-500" />
