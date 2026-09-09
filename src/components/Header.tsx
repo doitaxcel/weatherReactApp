@@ -9,7 +9,7 @@ const Header = () => {
                     <Cloud size={25} />
                 </div>
                 <div className="flex flex-col">
-                    <h3 className="text-xl font-bold">Weathering with You</h3>
+                    <h1 className="text-xl font-bold">Weathering with You</h1>
                     <p className="text-xs text-gray-500">Your Daily Forecast</p>
                 </div>
             </div>

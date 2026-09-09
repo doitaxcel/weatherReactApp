@@ -25,7 +25,7 @@ const SearchBar = ({ onSearch, error }: Props) => {
         input.value = "";
         inputElement.current?.focus();
     }
-    
+
     return (
         <form
             onSubmit={handleSubmit}
@@ -44,6 +44,7 @@ const SearchBar = ({ onSearch, error }: Props) => {
                     type="text"
                     placeholder="Search city..."
                     className="w-full bg-transparent outline-none text-gray-700 placeholder:text-gray-400"
+                    aria-label="City Search"
                 />
                 {error && (
                     <p className="absolute top-full mt-1 text-sm text-red-500">
